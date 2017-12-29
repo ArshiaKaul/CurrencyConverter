@@ -30,7 +30,9 @@
   },
   "dependencies": {
     "expo": "^23.0.2",
+    "prop-types": "^15.6.0",
     "react": "^16.1.1",
-    "react-native": "^0.50.4"
+    "react-native": "^0.50.4",
+    "react-native-extended-stylesheet": "^0.8.0"
   }
 }
