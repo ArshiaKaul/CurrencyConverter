@@ -12,16 +12,19 @@ export default EStyleSheet.create({
     justifyContent: 'center',
     width: imageWidth,
     height: imageWidth,
+    margin: imageWidth / 3,
   },
   image: {
     width: imageWidth / 2,
-    marginTop: 120,
+    marginTop: imageWidth / 3,
   },
   text: {
     fontWeight: '600',
     fontSize: 28,
     letterSpacing: -0.5,
-    marginTop: 50,
+    textAlign: 'center',
+    width: imageWidth * 2,
+    marginTop: 20,
     color: '$white',
   },
 });
