@@ -1,6 +1,6 @@
 import React from 'react';
 import EStyleSheet from 'react-native-extended-stylesheet';
-import Home from './screens/Home';
+import CurrencyList from './screens/CurrencyList';
 
 EStyleSheet.build({
   $primaryBlue: '#FF6D7A',
@@ -10,4 +10,4 @@ EStyleSheet.build({
   $lightGray: '#F3F3F3',
 });
 
-export default () => <Home />;
+export default () => <CurrencyList />;
