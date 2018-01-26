@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 import { ListItem, Separator } from '../components/List';
 
-const ICON_PREFIX = Platform.OS === 'ios' ? 'ios' : 'md'
+const ICON_PREFIX = Platform.OS === 'ios' ? 'ios' : 'md';
 const ICON_COLOR = '#868686';
 const ICON_SIZE = 23;
 
