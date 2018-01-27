@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import { StatusBar, KeyboardAvoidingView } from 'react-native';
 import { PropTypes } from 'prop-types';
+
 import { Container } from '../components/Container';
 import { Logo } from '../components/Logo';
 import { InputWithButton } from '../components/TextInput';
 import { ClearButton } from '../components/Button';
 import { LastConverted } from '../components/Text';
 import { Header } from '../components/Header';
+
+import { swapCurrency, changeCurrencyAmount } from '../actions/currencies';
 
 const TEMP_BASE_CURRENCY = 'USD';
 const TEMP_QUOTE_CURRENCY = 'GBP';
@@ -30,12 +33,13 @@ class Home extends Component {
     this.props.navigation.navigate('CurrencyList', { title: 'Quote Currency' });
   }
 
-  handleTextChange = (text) => {
-    console.log('change text', text);
+  handleTextChange = (amount) => {
+    console.log(changeCurrencyAmount(amount));
   }
 
   handleSwapCurrency = () => {
-    console.log('press swap currency');
+    // TODO: Make this actually work with this.props.dispatch
+    console.log(swapCurrency());
   }
 
   handleOptionsPress = () => {
